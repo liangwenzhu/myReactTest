@@ -1,0 +1,25 @@
+.init{
+	display: inline-block;
+	vertical-align: middle;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	white-space: nowrap;
+	outline: none;
+	color: #333;
+	width:220px;
+	height:30px;
+	padding:0 5px;
+	background-color: transparent;
+}
+.init:hover{
+	/*opacity: 0.9;*/
+	/*background-color: #d1d1d1;*/
+}
+.init:focus{
+	outline: none;
+	background-image: none;
+	-moz-box-shadow: 0 0 8px #ccc;
+	-webkit-box-shadow: 0 0 8px #ccc;
+	box-shadow: 0 0 8px #ccc;
+}

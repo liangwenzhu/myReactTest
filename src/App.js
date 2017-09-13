@@ -5,6 +5,16 @@ import logo from './logo.svg';
 import './App.css';
 import HasNotLogin from './test/HasNotlogin';
 import Model from './containers/Model'
+
+import Button from './baseGroup/Button/index'
+import Input from './baseGroup/Input/index'
+// import Icon from './baseGroup/Icon/index'
+
+
+
+
+
+
 class HasLogin extends Component{
     constructor(props){
         super(props);
@@ -304,42 +314,43 @@ class TTT extends Component{
         )
     }
 }
-class Button extends Component{
-    render(){
-        return(
-            <button style={{background: this.context.color}}>
-                {this.props.children}
-            </button>
-        )
-    }
-}
+
+// class Button extends Component{
+//     render(){
+//         return(
+//             <button style={{background: this.context.color}}>
+//                 {this.props.children}
+//             </button>
+//         )
+//     }
+// }
 // Button.contextTypes = {
 //     color:PropTypes.string,
 // };
-class Message extends Component{
-    render(){
-        return(
-            <div>
-                {this.props.text}
-              <Button color={this.props.color}>Delete</Button>
-            </div>
-        )
-    }
-}
-class MessageList extends Component{
-    getChildContext(){
-        return {color:'red'}
-    }
-    render(){
-        const color = 'red';
-        const children = <Message color={color} text='asd'/>;
-        return(
-            <div>
-                {children}
-            </div>
-        )
-    }
-}
+// class Message extends Component{
+//     render(){
+//         return(
+//             <div>
+//                 {this.props.text}
+//               <Button color={this.props.color}>Delete</Button>
+//             </div>
+//         )
+//     }
+// }
+// class MessageList extends Component{
+//     getChildContext(){
+//         return {color:'red'}
+//     }
+//     render(){
+//         const color = 'red';
+//         const children = <Message color={color} text='asd'/>;
+//         return(
+//             <div>
+//                 {children}
+//             </div>
+//         )
+//     }
+// }
 // MessageList.childContextTypes = {
 //     color:PropTypes.string
 // };
@@ -366,6 +377,8 @@ function select(state) {
         userName: state.userName
     };
 }
+
+
 class App extends Component {
     constructor(props){
         super(props);
@@ -398,6 +411,9 @@ class App extends Component {
         //这里如果不使用箭头函数，this代指的不是App，则会报错。
         this.props.dispatch({type:'A',filter:'kpii'});
     };
+    ale = ()=>{
+        alert("321")
+    }
     render(){
         return(
             <div className="App">
@@ -407,22 +423,32 @@ class App extends Component {
                 </div>
                 <div className="App-intro">
                     <span>now is {this.state.date.toLocaleTimeString()}</span>
-                    <p onClick={this.clickFn}>my name is {this.props.userName}</p>
+                    <Button/>
+                    <Input/>
+
+
+
+
+
+
+
+
+                    {/*<p onClick={this.clickFn}>my name is {this.props.userName}</p>*/}
                     {/*{this.state.islog ? <HasLogin name = {this.state.name}/> : <HasNotLogin />}*/}
                     {/*<Ul arr={this.state.arr}/>*/}
                     {/*<NameForm/>*/}
                     {/*<UpState/>*/}
                     {/*<WelcomeDialog/>*/}
                 </div>
-                <Model/>
+                {/*<Model/>*/}
                 {/*<SearchTheTable product={JSONDATA}/>*/}
                 {/*<HasNotLogin>this is {this.props.userName}</HasNotLogin>*/}
                 {/*<FilterableProductTable products={JSONDATA}/>*/}
                 {/*<MessageList/>*/}
-                <ul>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/inbox">Inbox</Link></li>
-                </ul>
+                {/*<ul>*/}
+                {/*<li><Link to="/about">About</Link></li>*/}
+                {/*<li><Link to="/inbox">Inbox</Link></li>*/}
+                {/*</ul>*/}
                 {/*{this.props.children}*/}
 
             </div>
