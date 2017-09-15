@@ -8,8 +8,12 @@ import Model from './containers/Model'
 
 import Button from './baseGroup/Button/index'
 import Input from './baseGroup/Input/index'
+// import './baseGroup/Icon/icon/fonts/ElegantIcons.eot';
+// import './baseGroup/Icon/icon/fonts/ElegantIcons.svg';
+// import './baseGroup/Icon/icon/fonts/ElegantIcons.ttf';
+// import './baseGroup/Icon/icon/fonts/ElegantIcons.woff';
 // import Icon from './baseGroup/Icon/index'
-
+import Select from './baseGroup/Select/index';
 
 
 
@@ -423,22 +427,19 @@ class App extends Component {
                 </div>
                 <div className="App-intro">
                     <span>now is {this.state.date.toLocaleTimeString()}</span>
-                    <Button/>
-                    <Input/>
 
-
-
-
-
-
-
-
+                    {/*<Icon/>*/}
                     {/*<p onClick={this.clickFn}>my name is {this.props.userName}</p>*/}
                     {/*{this.state.islog ? <HasLogin name = {this.state.name}/> : <HasNotLogin />}*/}
                     {/*<Ul arr={this.state.arr}/>*/}
                     {/*<NameForm/>*/}
                     {/*<UpState/>*/}
                     {/*<WelcomeDialog/>*/}
+                </div>
+                <div className="App-intro">
+                    <Button/>
+                    <Input/>
+                    <Select/>
                 </div>
                 {/*<Model/>*/}
                 {/*<SearchTheTable product={JSONDATA}/>*/}

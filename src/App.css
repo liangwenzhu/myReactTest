@@ -1,5 +1,5 @@
 :global(.App) {
-  text-align: center;
+
 }
 
 :global(.App-logo) {
@@ -8,6 +8,7 @@
 }
 
 :global(.App-header) {
+  text-align: center;
   background-color: #222;
   height: 150px;
   padding: 20px;
@@ -15,6 +16,8 @@
 }
 
 :global(.App-intro) {
+  width:600px;
+  margin: 0 auto;
   font-size: large;
 }
 
