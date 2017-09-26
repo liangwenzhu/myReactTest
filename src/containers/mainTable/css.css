@@ -1,0 +1,100 @@
+
+.init{
+	display: block;
+	width:100%;
+    height:100%;
+	vertical-align: middle;
+	background-image: none;
+	border: none;
+	border-radius: 3px;
+	white-space: nowrap;
+	outline: none;
+	color: #333;
+}
+.tr{
+    display: flex;
+    /*justify-content:space-between;*/
+    /*align-items: center;*/
+    width:100%;
+    padding:15px 5px;
+    font-size: 14px;
+}
+.col{
+    padding:0 5px;
+}
+.thead{
+    composes: tr;
+    color: #7d7d7d;
+    border-bottom: 2px solid #c9c9c9;
+}
+.tbody{
+    composes: tr;
+    border-bottom: 1px solid #e4e4e4;
+}
+.title{
+    width:620px;
+    height:100%;
+    font-weight: 600;
+}
+.category{
+    composes: col;
+    width:110px;
+    text-align: center;
+}
+.categoryColor{
+    display: inline-block;
+    width:5px;
+    height:20px;
+    margin-right:3px;
+    background-color: red;
+    vertical-align: top;
+}
+.user{
+    width:160px;
+    font-size: 15px;
+}
+.reply{
+    composes: col;
+    width:80px;
+    text-align: center;
+}
+.visit{
+    composes: col;
+    width:80px;;
+    text-align: center;
+}
+.active{
+    composes: col;
+    width:80px;
+    text-align: center;
+}
+.userHead{
+    margin-right:5px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    border-radius:30px;
+}
+.pitContainer{
+    display: flex;
+    width:70%;
+    margin-top:15px;
+    justify-content: space-around;
+}
+.pitPic{
+    width:120px;
+    height:74.7px;
+    cursor: pointer;
+    -webkit-transition:  0.2s;
+    -moz-transition:  0.2s;
+    -ms-transition:  0.2s;
+    -o-transition:  0.2s;
+    transition:  0.2s;
+}
+.pitPic:hover{
+    transform: scale(1.1);
+    -webkit-transition:  0.2s;
+    -moz-transition:  0.2s;
+    -ms-transition:  0.2s;
+    -o-transition:  0.2s;
+    transition:  0.2s;
+}

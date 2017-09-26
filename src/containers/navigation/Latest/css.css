@@ -1,0 +1,19 @@
+.init{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	white-space: nowrap;
+	outline: none;
+	color: #ffffff;
+	padding:5px 12px;
+    margin-left:10px;
+	background-color: #3385ff;
+}
+.init:active{
+	outline: none;
+	background-image: none;
+}

@@ -1,0 +1,88 @@
+.width{
+	width:100px;;
+}
+.init{
+	composes: width;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+    background-color: #e4e4e4;
+}
+.selectIcon{
+	position: absolute;
+	right:5px;
+	font-size:12px;
+	line-height: 30px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: none;
+	white-space: nowrap;
+	outline: none;
+	color: #333;
+	background-color: transparent;
+
+}
+.select{
+	composes:width;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	white-space: nowrap;
+	outline: none;
+	color: #333;
+	height:30px;
+	padding:0 5px;
+	background-color: transparent;
+	cursor: pointer;
+}
+.select:focus{
+	outline: none;
+	background-image: none;
+	-moz-box-shadow: 0 0 8px #ccc;
+	-webkit-box-shadow: 0 0 8px #ccc;
+	box-shadow: 0 0 8px #ccc;
+}
+.ul{
+	width:99%;
+	position: absolute;
+	text-align: left;
+	padding:0;
+	margin:0;
+	font-size:15px;
+	border: 1px solid #ccc;
+	border-top:none;
+    background-color: #ffffff;
+}
+.li{
+	width: 100%;
+	list-style-type: none;
+	cursor: pointer;
+}
+.li:hover{
+	color: #ffffff;
+	background-color: #0078e7;
+}
+.liAll{
+    composes: li;
+    font-weight:600;
+    font-size: 14px;
+}
+.categoryColor{
+    display: inline-block;
+    width:5px;
+    height:19px;
+    margin-right:3px;
+    background-color: #455f77;
+    vertical-align: middle;
+}
+.span{
+	display: inline-block;
+	font-size: inherit;
+	padding:5px 0 5px 5px;
+}

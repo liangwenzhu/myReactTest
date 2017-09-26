@@ -1,0 +1,95 @@
+@keyframes showOut {
+  from {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes showOut {
+  from {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-moz-keyframes showOut {
+  from {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@-o-keyframes showOut {
+  from {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes showIn {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes showIn {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@-moz-keyframes showIn {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+@-o-keyframes showIn {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+.modelShowOut {
+  -webkit-animation: showOut 0.4s ease 0s forwards;
+  -moz-animation: showOut 0.4s ease 0s forwards;
+  -ms-animation: showOut 0.4s ease 0s forwards;
+  -o-animation: showOut 0.4s ease 0s forwards;
+  animation: showOut 0.4s ease 0s forwards;
+}
+.modelShowIn {
+  -webkit-animation: showIn 0.4s ease 0s forwards;
+  -moz-animation: showIn 0.4s ease 0s forwards;
+  -ms-animation: showIn 0.4s ease 0s forwards;
+  -o-animation: showIn 0.4s ease 0s forwards;
+  animation: showIn 0.4s ease 0s forwards;
+}
+

@@ -8,6 +8,7 @@ export default class componentName extends Component{
         super(props);
         this.state = {
             ifShow:false,
+            ifFocus:false,
             selected:{
                 name:props.selectTips
             }
@@ -48,13 +49,12 @@ export default class componentName extends Component{
         let optionData=[{"name":"中国"},{"name":"美国"}, {"name":"日本"}, {"name":"俄罗斯"}];
         const {
             // optionData, //option的数据
-            className,
             selectTips, //select的提示
         } = this.props;
         return(
             <div className={style.init} onFocus={()=>{this.getIfShow(true)}} onBlur={()=>{this.getIfShow(false)}}>
                 <button className={style.select}  placeholder="select" >{this.state.selected.name}</button>
-                <span className={style.selectIcon} onClick={this.handleClick}>icon</span>
+                <span className={style.selectIcon + " iconfont icon-unfold"} onClick={this.handleClick}/>
                 {this.state.ifShow ? <Ul getOptionVal = {this.getOptionVal} getIfShow = {this.getIfShow} optionData={optionData}/> : ''}
             </div>
         )

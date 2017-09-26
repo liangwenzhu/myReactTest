@@ -8,7 +8,9 @@ export default class componentName extends Component{
         super(props);
         this.state={
             value:props.value,
-            ifTipsShow:false
+            middleValue:undefined,
+            ifLimitTipsShow:false,
+            ifTipsShow:false,
         }
     }
     static propTypes = {
@@ -32,12 +34,23 @@ export default class componentName extends Component{
     componentWillUnmount(){
 
     }
-    showTips = () =>{
+    //验证成功时
+    showLimitTips = ()=>{
+        this.setState({
+            ifLimitTipsShow:true
+        })
+    };
+    unShowLimitTips = ()=>{
+        this.setState({
+            ifLimitTipsShow:false
+        })
+    };
+    showSearchTips = () =>{
       this.setState({
           ifTipsShow:true
       })
     };
-    unShowTips = () =>{
+    unShowSearchTips = () =>{
         this.setState({
             ifTipsShow:false
         })
@@ -50,6 +63,7 @@ export default class componentName extends Component{
     getOptionVal = (obj)=>{
         this.setState({
             value:obj.name,
+            ifTipsShow:false
         })
     };
     render(){
@@ -74,21 +88,22 @@ export default class componentName extends Component{
         }
         let searchTips;
         if(ifOpenSearchTips) {
-            searchTips = <Ul optionData={optionData} inputVal={this.state.value} getOptionVal={this.getOptionVal}/>;
+            searchTips = <Ul optionData={optionData} inputVal={this.state.value} getOptionVal={this.getOptionVal} showTips={this.showSearchTips} unShowTips={this.unShowSearchTips}/>;
         }
         return(
             <div className={style.init}>
                 <input className = {style.input}
                        disabled = {disabled}
-                       onBlur = {this.unShowTips}
-                       onFocus = {this.showTips}
+                       onFocus = {this.showLimitTips}
+                       onBlur = {this.unShowLimitTips}
+                       onClick = {this.showSearchTips}
                        readOnly = {readOnly}
                        placeholder = {placeholder}
                        value = {this.state.value}
                        onChange = {this.handelChange}
                 />
                 {this.state.ifTipsShow ? searchTips : ''}
-                {this.state.ifTipsShow ? limitTips : ''}
+                {this.state.ifLimitTipsShow ? limitTips : ''}
             </div>
         )
     }

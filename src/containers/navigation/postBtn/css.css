@@ -1,0 +1,22 @@
+.init{
+	text-align: center;
+    height:30px;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: none;
+	border-radius: 3px;
+	white-space: nowrap;
+	outline: none;
+	color: #ffffff;
+	padding:5px 12px;
+	background-color: #129611;
+}
+.init:hover{
+	/*opacity: 0.9;*/
+	/*background-color: #d1d1d1;*/
+}
+.init:active{
+	outline: none;
+	background-image: none;
+}
