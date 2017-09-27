@@ -17,28 +17,17 @@ import {
 import Post from './Post/index';
 import style from './css.css';
 
-//颜色
 const colorStyle = [
     {label:'黑色',style:'black',title:'黑色字体'},
     {label:'蓝色',style:'blue',title:'蓝色字体'},
     {label:'紫色',style:'purple',title:'紫色字体'},
 ];
-//行样式
-const inlineStyle = [
+const fontStyle = [
     {label:'B',style:'bold',title:'加粗'},
     {label:'I',style:'italic',title:'斜体'},
 ];
-//块样式
-const blockStyle = [
-    {label:'H',style:'subhead',title:'小标题'},
-    {label:'" "',style:'cite',title:'引用'},
-    {label:'</>',style:'code',title:'代码块'},
-    {label:'序',style:'ul',title:'有序列表'},
-    {label:'表',style:'ol',title:'无序列表'},
-];
 //样式映射
 const editorStyleMap = {
-    //颜色
     'black':{
         color:'#000'
     },
@@ -48,44 +37,19 @@ const editorStyleMap = {
     'purple':{
         color: '#8f64e6'
     },
-    //行
     'bold':{
         fontWeight: '600',
     },
     'italic':{
         fontStyle: 'italic',
-    },
-    //块
-    'subhead':{
-        display:'block',
-        fontSize:'18px;',
-        fontWeight:'600'
-    },
-    'cite':{
-        display:'block',
-        borderLeft: '5px solid #eee',
-        color: '#666',
-        // fontStyle: italic;
-        margin: '16px 0',
-        padding: '10px 20px'
-    },
-    'code':{
-        width: '61.8%',
-        display: 'block',
-        color: '#880000',
-        backgroundColor: '#f9f9f9',
-        fontSize:'13px',
-        margin: '16px 0',
-        padding: '10px 20px'
-    },
-    'ul':{
-
-    },
-    'ol':{
-
-    },
+    }
 };
 
+const styleMap = {
+    'Restore':{
+        textDecoration:'Restore'
+    }
+};
 const styles = {
     root: {
         fontFamily: '\'Helvetica\', sans-serif',
@@ -181,9 +145,7 @@ export default class componentName extends Component{
         };
         this.focus = () => this.refs.editor.focus();
         this.onChange = (editorState) => this.setState({editorState});
-        this.toggle = (inlineStyle) => this._toggleColor(inlineStyle);
-        this.toggleInlineStyle = (inlineStyle) => this._toggleInlineStyle(inlineStyle);
-        this.toggleBlockType = (blockStyle) => this._toggleBlockType(blockStyle);
+        this.toggle = (classStyle,styleName) => this._toggleColor(classStyle,styleName);
     }
     static propTypes = {
 
@@ -203,8 +165,7 @@ export default class componentName extends Component{
     storeHandle = ()=>{
         console.log(JSON.stringify(this.state.editorState))
     };
-    //颜色切换
-    _toggleColor = (styleObj)=>{
+    _toggleColor = (styleClass,styleName)=>{
         const {editorState} = this.state;
         // Object.keys(editorStyleMap) 获取所以颜色属性名数组
         // editorState.getCurrentContent()当前编辑器的内容对象。以这个为起点。
@@ -215,9 +176,19 @@ export default class componentName extends Component{
         //第二个参数selection 从editorState.getSelection()获取。当前光标选中的文字。
         // 整段的意思，去除选中文字中所有editorStyleMap带有的样式，并返回整段文本的内容。
         const selection = editorState.getSelection();
+        let styleArr;
+        switch(styleClass){
+            case 'colorStyle':{
+                styleArr =  colorStyle;
+            }
+            break;
+            case 'fontStyle':{
+                styleArr =  fontStyle;
+            }
+        }
 
-        const nextContentState = colorStyle.reduce((contentState,styleObj)=>{
-                return Modifier.removeInlineStyle(contentState,selection,styleObj.style)
+        const nextContentState = styleArr.reduce((contentState,styleClass)=>{
+                return Modifier.removeInlineStyle(contentState,selection,styleClass.style)
             },editorState.getCurrentContent());
 
         //EditorState.push 返回一个新的editorState对象。 最开始对象是从draft.js中得到的。需要两个必要参数
@@ -243,75 +214,57 @@ export default class componentName extends Component{
         //现在的行样式内是否已经存在了被选中的样式“toggledColor”
         //没有。加上去,此时
         //有。跳过（由于前面将所有的颜色都去除。因此现在的editorState是没有颜色style的）。
-        if (!currentStyle.has(styleObj)) {
+        if (!currentStyle.has(styleName)) {
             nextEditorState = RichUtils.toggleInlineStyle(
                 nextEditorState,
-                styleObj
+                styleName
             );
         }
         //把状态改变，映射
         this.onChange(nextEditorState);
     };
-    //行格式
-    _toggleInlineStyle = (inlineStyle)=>{
-        this.onChange(
-            RichUtils.toggleInlineStyle(
-                this.state.editorState,
-                inlineStyle
-            )
-        )
+    //加粗
+    Bold = ()=>{
+        this.onChange(RichUtils.toggleInlineStyle(this.state.editorState,'BOLD'));
     };
-    //块格式
-    _toggleBlockType = (blockStyle)=>{
-        this.onChange(
-            RichUtils.toggleBlockType(
-                this.state.editorState,
-                blockStyle
-            )
-        )
+    //倾斜
+    Italic = ()=>{
+        this.onChange(RichUtils.toggleInlineStyle(this.state.editorState,'ITALIC'));
+    };
+    //代码块
+    Code = ()=>{
+        this.onChange(RichUtils.toggleInlineStyle(this.state.editorState,'CODE'));
+    };
+    //还原
+    Restore = ()=>{
+        this.onChange(RichUtils.toggleInlineStyle(this.state.editorState,'Restore'));
     };
     //字体颜色
-    Color =(styleName)=>{
-        this.toggle(styleName)
-    };
-    Inline = (inlineStyle)=>{
-        this.toggleInlineStyle(inlineStyle);
-    };
-    Block = (blockStyle)=>{
-        this.toggleBlockType(blockStyle)
+    Color =(classStyle,styleName)=>{
+        this.toggle(classStyle,styleName)
     };
     render(){
         const {
             children
         } = this.props;
         let colorStyleSpan = [];
-        let inlineSpan = [];
-        let blockSpan = [];
-        //颜色格式
+        let fontStyleSpan = [];
         for(let obj of colorStyle){
             colorStyleSpan.push(
-                <span onClick={()=>{this.Color(obj.style)}} className={style.colors} title={obj.title}><b className={style.color + ' ' + style[obj.style]}/></span>
+                <span onClick={()=>{this.Color('colorStyle',obj.style)}} className={style.colors} title={obj.title}><b className={style.color + ' ' + style[obj.style]}/></span>
                  );
         }
-        //行格式
-        for(let obj of inlineStyle){
-            inlineSpan.push(
-                <span onClick={()=>{this.Inline(obj.style)}} title={obj.title}>{obj.label}</span>
-            )
-        }
-        //块格式
-        for(let obj of blockStyle){
-            blockSpan.push(
-                <span onClick={()=>{this.Inline(obj.style)}} title={obj.title}>{obj.label}</span>
+        for(let obj of fontStyle){
+            fontStyleSpan.push(
+                <span onClick={()=>{this.Color('fontStyle',obj.style)}} title={obj.title}>{obj.label}</span>
             )
         }
         return(
             <div className={style.init}>
                 <div className={style.operate}>
-                    {inlineSpan}
+                    {fontStyleSpan}
                     {/*<span onClick = {()=>{this.Color('fontStyle','bold')}} title="加粗">B</span>*/}
                     {/*<span onClick={this.Italic} title="倾斜"><i>I</i></span>*/}
-                    {blockSpan}
                     <span onClick={this.Restore} title="小标题">H</span>
                     <span title="引用">&quot;&nbsp;&quot;</span>
                     <span onClick={this.Code} title="代码块">&lt;/&gt;</span>
@@ -331,18 +284,8 @@ export default class componentName extends Component{
                     </Editor>
                 </div>
                 <Post storeHandle={this.storeHandle}>保存</Post>
+                {/*<button onClick = {this.storeHandle}>保存</button>*/}
             </div>
-        )
-    }
-}
-
-class colorType extends Component{
-    constructor(props){
-        super(props)
-    }
-    render(){
-        return(
-            <div>1</div>
         )
     }
 }
