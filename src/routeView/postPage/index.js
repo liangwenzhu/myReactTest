@@ -4,7 +4,6 @@ import { string, object, number, array, bool, func, symbol } from 'prop-types';
 import PostTitle from '../../containers/postTitle/index';
 import PostItem from '../../containers/postItem/index';
 import Editor from '../../baseGroup/Editor/index';
-import Editor2 from '../../baseGroup/Editor2/index';
 import style from './css.css';
 
 let a = [1,2,3,4];
@@ -42,7 +41,6 @@ export default class componentName extends Component{
                 <PostTitle/>
                 <PostItem/>
                 <Editor/>
-                <Editor2/>
             </div>
         )
     }

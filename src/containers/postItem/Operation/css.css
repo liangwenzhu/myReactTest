@@ -9,6 +9,9 @@
     height: 0;
     visibility:hidden;
 }
+.listType{
+    list-style-type: none;
+}
 .ul{
     width:100%;
     display: flex;
@@ -16,21 +19,21 @@
     padding: 0;
     margin: 0 0 10px 0;
 }
-.ul .li{
-    list-style-type: none;
+.li{
+    composes:listType ;
     text-align: center;
     margin-right:10px;
     color: #aeaeae;
 }
-.ul .li :hover{
+.li :hover{
     background-color: #cccccc;
     color: #414141;
 }
-.ul .love :hover{
+.love :hover{
     background-color: #fee9ee;
     color: #fa6c8d;
 }
-.ul .li span{
+.li span{
     display: inline-block;
     padding:8px;
     cursor: pointer;

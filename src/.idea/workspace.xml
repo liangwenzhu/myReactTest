@@ -20,11 +20,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routeView/postPage/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="44" column="25" lean-forward="false" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+            <state relative-caret-position="441">
+              <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
               <folding>
                 <element signature="e#9#61#0" expanded="true" />
               </folding>
@@ -35,8 +35,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baseGroup/Editor2/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+            <state relative-caret-position="607">
+              <caret line="120" column="29" lean-forward="false" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="29" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -47,65 +47,19 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baseGroup/Editor/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1867">
-              <caret line="338" column="34" lean-forward="true" selection-start-line="338" selection-start-column="34" selection-end-line="338" selection-end-column="34" />
+            <state relative-caret-position="411">
+              <caret line="140" column="32" lean-forward="true" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
-                <element signature="e#4675#6674#0" expanded="false" />
+                <element signature="e#2193#2201#0" expanded="false" />
+                <element signature="e#2229#2237#0" expanded="false" />
+                <element signature="e#2263#2271#0" expanded="false" />
+                <element signature="e#2295#2303#0" expanded="false" />
+                <element signature="e#2330#2338#0" expanded="false" />
+                <element signature="e#2361#2428#0" expanded="false" />
+                <element signature="e#2480#2643#0" expanded="false" />
+                <element signature="e#2691#2852#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RichEditor.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baseGroup/Editor2/RichEditor.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-761">
-              <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rich.html" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Desktop/k/draft-js/examples/draft-0-10-0/rich/rich.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="144" column="34" lean-forward="true" selection-start-line="144" selection-start-column="34" selection-end-line="144" selection-end-column="34" />
-              <folding>
-                <element signature="e#4421#4624#0" expanded="false" />
-                <element signature="e#5950#6579#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RichEditor.css" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/k/draft-js/examples/draft-0-10-0/rich/RichEditor.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="color.html" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/k/draft-js/examples/draft-0-10-0/color/color.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2790">
-              <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="css.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baseGroup/Editor/Post/css.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -113,18 +67,8 @@
       <file leaf-file-name="css.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baseGroup/Editor/css.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="33" />
+            <state relative-caret-position="180">
+              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -148,7 +92,6 @@
       <find>getBlockTr</find>
       <find>restore</find>
       <find>styles</find>
-      <find>getEntityStrategy</find>
       <find>customStyleMap</find>
       <find>this.toggleColor</find>
       <find>toggledColor</find>
@@ -157,10 +100,13 @@
       <find>colorStyle</find>
       <find>.R</find>
       <find>fontStyle</find>
-      <find>blockquote</find>
       <find>code-block</find>
       <find>header-four</find>
       <find>H4</find>
+      <find>header-one</find>
+      <find>getEntityStrategy</find>
+      <find>RichEditor-blockquote</find>
+      <find>blockquote</find>
     </findStrings>
     <replaceStrings>
       <replace>styleMap</replace>
@@ -171,11 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/baseGroup/ModelWin/index.js" />
-        <option value="$PROJECT_DIR$/baseGroup/ModelWin/css.css" />
-        <option value="$PROJECT_DIR$/containers/modelLogin/Login/css.css" />
-        <option value="$PROJECT_DIR$/containers/modelLogin/Sign/css.css" />
-        <option value="$PROJECT_DIR$/containers/modelLogin/Input/index.js" />
         <option value="$PROJECT_DIR$/containers/modelLogin/Email/index.js" />
         <option value="$PROJECT_DIR$/store/store.js" />
         <option value="$PROJECT_DIR$/containers/header/headerNavigation/signBtn/index.js" />
@@ -199,8 +140,6 @@
         <option value="$PROJECT_DIR$/containers/postItem/Footer/css.css" />
         <option value="$PROJECT_DIR$/containers/postItem/Footer/index.js" />
         <option value="$PROJECT_DIR$/containers/postItem/Operation/Post/css.css" />
-        <option value="$PROJECT_DIR$/containers/postItem/Operation/index.js" />
-        <option value="$PROJECT_DIR$/containers/postItem/Operation/css.css" />
         <option value="$PROJECT_DIR$/containers/postItem/index.js" />
         <option value="$PROJECT_DIR$/containers/header/headerNavigation/css.css" />
         <option value="$PROJECT_DIR$/containers/header/titleImg/css.css" />
@@ -217,11 +156,18 @@
         <option value="$PROJECT_DIR$/baseGroup/Editor3/index.js" />
         <option value="$PROJECT_DIR$/baseGroup/Editor/Post/css.css" />
         <option value="$PROJECT_DIR$/baseGroup/Editor2/RichEditor.css" />
-        <option value="$PROJECT_DIR$/routeView/postPage/index.js" />
+        <option value="$USER_HOME$/Desktop/k/draft-js/examples/draft-0-10-0/rich/rich.html" />
         <option value="$PROJECT_DIR$/baseGroup/Editor2/index.js" />
+        <option value="$PROJECT_DIR$/baseGroup/Editor/InlineStyleControl/css.css" />
+        <option value="$PROJECT_DIR$/baseGroup/Editor/ButtonType/index.js" />
+        <option value="$PROJECT_DIR$/containers/postItem/Operation/index.js" />
+        <option value="$PROJECT_DIR$/containers/postItem/Operation/css.css" />
+        <option value="$PROJECT_DIR$/baseGroup/Editor/InlineStyleControl/index.js" />
+        <option value="$PROJECT_DIR$/baseGroup/Editor/BlockStyleControl/index.js" />
+        <option value="$PROJECT_DIR$/baseGroup/Editor/ButtonType/css.css" />
         <option value="$PROJECT_DIR$/baseGroup/Editor/css.css" />
         <option value="$PROJECT_DIR$/baseGroup/Editor/index.js" />
-        <option value="$USER_HOME$/Desktop/k/draft-js/examples/draft-0-10-0/rich/rich.html" />
+        <option value="$PROJECT_DIR$/routeView/postPage/index.js" />
       </list>
     </option>
   </component>
@@ -365,11 +311,12 @@
       <workItem from="1506300219198" duration="27123000" />
       <workItem from="1506386337333" duration="27836000" />
       <workItem from="1506472020494" duration="28772000" />
+      <workItem from="1506558350918" duration="25993000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291256000" />
+    <option name="totallyTimeSpent" value="317249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -406,41 +353,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/reducers/reduce.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/containers/modelSign/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="70" column="6" lean-forward="false" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/containers/header/headerNavigation/signBtn/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" column="37" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="29" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/containers/modelSign/Sgin/index.js" />
-    <entry file="file://$PROJECT_DIR$/containers/header/headerNavigation/loginBtn/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="6" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="30" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/containers/modelSign/Login/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-219">
@@ -550,14 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/containers/postItem/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="44" column="20" lean-forward="false" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/containers/postItem/Footer/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -572,38 +481,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/containers/postItem/Operation/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="30" column="18" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/containers/postItem/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-          <folding>
-            <element signature="e#9#61#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/containers/postItem/Operation/Post/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/containers/postItem/Operation/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="33" column="87" lean-forward="false" selection-start-line="33" selection-start-column="87" selection-end-line="33" selection-end-column="87" />
-          <folding>
-            <element signature="e#9#61#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,7 +575,7 @@
         <state relative-caret-position="1080">
           <caret line="41" column="43" lean-forward="false" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
           <folding>
-            <element signature="e#9#61#0" expanded="true" />
+            <element signature="e#9#61#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -727,35 +608,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routeView/postPage/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="44" column="25" lean-forward="false" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-          <folding>
-            <element signature="e#9#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baseGroup/Editor/Post/css.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
+        <state relative-caret-position="540">
           <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baseGroup/Editor/css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="63" column="1" lean-forward="true" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/k/draft-js/examples/draft-0-10-0/color/color.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2790">
+        <state relative-caret-position="1470">
           <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
           <folding />
         </state>
@@ -763,48 +626,155 @@
     </entry>
     <entry file="file://$USER_HOME$/Desktop/k/draft-js/examples/draft-0-10-0/rich/RichEditor.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        <state relative-caret-position="360">
+          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baseGroup/Editor2/index.js">
+    <entry file="file://$USER_HOME$/Desktop/k/draft-js/examples/draft-0-10-0/rich/rich.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        <state relative-caret-position="510">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="42" />
           <folding>
-            <element signature="e#0#52#0" expanded="true" />
+            <element signature="e#4421#4624#0" expanded="false" />
+            <element signature="e#5950#6579#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baseGroup/Editor2/RichEditor.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-761">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="256">
+          <caret line="30" column="49" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/containers/postItem/Operation/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/containers/postItem/Operation/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/containers/postItem/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/containers/postItem/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="44" column="20" lean-forward="false" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baseGroup/Editor/InlineStyleControl/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baseGroup/Editor/InlineStyleControl/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="22" />
+          <folding>
+            <element signature="e#9#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baseGroup/Editor/BlockStyleControl/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding>
+            <element signature="e#883#891#0" expanded="false" />
+            <element signature="e#919#927#0" expanded="false" />
+            <element signature="e#953#961#0" expanded="false" />
+            <element signature="e#985#993#0" expanded="false" />
+            <element signature="e#1020#1028#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baseGroup/Editor/ButtonType/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="e#9#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baseGroup/Editor/ButtonType/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="47" column="40" lean-forward="true" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baseGroup/Editor/css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baseGroup/Editor/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1867">
-          <caret line="338" column="34" lean-forward="true" selection-start-line="338" selection-start-column="34" selection-end-line="338" selection-end-column="34" />
+        <state relative-caret-position="411">
+          <caret line="140" column="32" lean-forward="true" selection-start-line="140" selection-start-column="32" selection-end-line="140" selection-end-column="32" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
-            <element signature="e#4675#6674#0" expanded="false" />
+            <element signature="e#2193#2201#0" expanded="false" />
+            <element signature="e#2229#2237#0" expanded="false" />
+            <element signature="e#2263#2271#0" expanded="false" />
+            <element signature="e#2295#2303#0" expanded="false" />
+            <element signature="e#2330#2338#0" expanded="false" />
+            <element signature="e#2361#2428#0" expanded="false" />
+            <element signature="e#2480#2643#0" expanded="false" />
+            <element signature="e#2691#2852#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/k/draft-js/examples/draft-0-10-0/rich/rich.html">
+    <entry file="file://$PROJECT_DIR$/baseGroup/Editor2/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="144" column="34" lean-forward="true" selection-start-line="144" selection-start-column="34" selection-end-line="144" selection-end-column="34" />
+        <state relative-caret-position="607">
+          <caret line="120" column="29" lean-forward="false" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="29" />
           <folding>
-            <element signature="e#4421#4624#0" expanded="false" />
-            <element signature="e#5950#6579#0" expanded="false" />
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routeView/postPage/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding>
+            <element signature="e#9#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
