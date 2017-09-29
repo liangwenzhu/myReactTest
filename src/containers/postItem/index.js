@@ -36,7 +36,10 @@ export default class componentName extends Component{
                         <span className={style.time}>5小时前</span>
                     </div>
                     <article className={style.article}/>
-                    <Operation/>
+                    <div>
+                        <Operation/>
+                    </div>
+
                     <Footer/>
                 </div>
             </div>

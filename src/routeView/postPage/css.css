@@ -12,3 +12,11 @@
 	color: #333;
 	background-color: #e6e6e6;
 }
+.container{
+    width:75%;
+}
+.editor{
+    width:100%;
+    margin-top:50px;
+    margin-bottom:100px;
+}

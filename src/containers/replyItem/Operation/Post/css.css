@@ -1,0 +1,28 @@
+.init{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: none;
+	border-radius: 3px;
+	white-space: nowrap;
+	outline: none;
+	color: #333;
+	padding:5px 12px;
+    margin-top:6px;
+    background-color: #ffffff;
+}
+.init:hover{
+	/*opacity: 0.9;*/
+	background-color: #e2e2e2;
+}
+.init:active{
+	outline: none;
+	background-image: none;
+}
+.init span{
+    font-size: 16px;
+    padding:0;
+    margin:0;
+}

@@ -4,6 +4,7 @@ import {
     convertFromRaw,
     convertToRaw,
     CompositeDecorator,
+    DefaultDraftBlockRenderMap,
     ContentState,
     Editor,
     EditorState,
@@ -13,6 +14,7 @@ import {
     KeyBindingUtil,
     Modifier
 } from 'draft-js';
+import Immutable from 'immutable';
 import InlineStyle from './InlineStyleControl/index';
 import BlockStyle from './BlockStyleControl/index';
 import ColorStyle from './InlineStyleControl/index';
@@ -21,6 +23,7 @@ import style from './css.css';
 
 //块按钮
 const BlockType = [
+    // {key:1,label: 'H', styleName: 'section',title:'小标题',iconClassName:''},
     {key:1,label: 'H', styleName: 'header-two',title:'小标题',iconClassName:''},
     {key:2,label: '“ ”', styleName: 'blockquote',title:'引用',iconClassName:''},
     {key:3,label: '</>', styleName: 'code-block',title:'代码块',iconClassName:''},
@@ -60,7 +63,13 @@ const editorStyleMap = {
         fontStyle: 'italic',
     },
 };
-
+const blockRenderMap = Immutable.Map({
+    'section': {
+        element: 'section'
+    },
+});
+//扩展块元素
+const extendedBlockRenderMap = DefaultDraftBlockRenderMap.merge(blockRenderMap);
 // 绘制方法,组件
 
 export default class componentName extends Component{
@@ -97,7 +106,7 @@ export default class componentName extends Component{
                 this.state.editorState,
                 inlineStyle
             )
-        )
+        );
     };
     //块格式
     _toggleBlockType = (blockType)=>{
@@ -124,6 +133,7 @@ export default class componentName extends Component{
                 <div className={style.editorRoot} onClick={this.focus}>
                     <Editor
                         customStyleMap = {editorStyleMap}
+                        blockRenderMap={extendedBlockRenderMap}
                         editorState={editorState}
                         onChange = {this.onChange}
                         blockStyleFn={getBlockStyle}
@@ -131,7 +141,7 @@ export default class componentName extends Component{
                     >
                     </Editor>
                 </div>
-                <Post storeHandle={this.storeHandle}>保存</Post>
+                <Post storeHandle={this.storeHandle}>提交评论</Post>
             </div>
         )
     }
@@ -143,6 +153,8 @@ function getBlockStyle(blockName){
             return 'RichEditor-blockquote';
         case 'code-block' :
             return 'RichEditor-code-block';
+        // case 'section' :
+        //     return 'RichEditor-section';
         default:
             return null;
     }
