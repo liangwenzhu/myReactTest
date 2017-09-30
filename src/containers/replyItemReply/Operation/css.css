@@ -1,7 +1,6 @@
 
 .init{
     position: relative;
-
 }
 .init:after{
     clear:both;
@@ -19,8 +18,7 @@
     display: flex;
     justify-content: flex-end;
     padding: 0;
-    margin: 0 0 10px 0;
-
+    margin: 0 0 5px 0;
 }
 .li{
     composes:listType ;
@@ -44,12 +42,4 @@
 }
 .replyNum{
     color: #ff28b3;
-}
-.connect{
-    position: absolute;
-    background-color: #f7f8fa;
-    right:0;
-    top:34px;
-    height: 20px;
-    width: 79px;
 }

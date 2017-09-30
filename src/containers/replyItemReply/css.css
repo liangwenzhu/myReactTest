@@ -5,8 +5,8 @@
 	width:100%;
     padding:10px 0;
 	vertical-align: middle;
-	background-image: none;
-	border-bottom: 1px solid #e5e5e5;
+	background-color: #f7f8fa;
+	border:none;
 	border-radius: 3px;
 	white-space: nowrap;
 	outline: none;
@@ -14,6 +14,9 @@
 }
 .userHead{
     position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 10px;
     -webkit-border-radius:30px;
     -moz-border-radius:30px;
     border-radius:30px;
@@ -28,7 +31,7 @@
     align-items: center;
     margin-bottom:15px;
     height: 30px;
-    font-size: 14px;
+    font-size: 12px;
 }
 .userName{
     display: inline-block;
@@ -38,9 +41,9 @@
 }
 .article{
     width:100%;
-    min-height:70px;
-    margin-bottom:20px;
-    background-color: rgb(251, 250, 255);
+    min-height:30px;
+    margin-bottom:5px;
+    background-color: inherit;
 }
 .operationContainer{
     height:45px;

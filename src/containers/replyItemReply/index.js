@@ -3,7 +3,6 @@ import React, {findDOMNode, Component} from 'react';
 import { string, object, number, array, bool, func, symbol } from 'prop-types';
 import style from './css.css';
 import Article from '../../baseGroup/EditorReadOnly/index'
-import Footer from './Footer/index';
 import Operation from './Operation/index';
 export default class componentName extends Component{
     constructor(props){
@@ -39,11 +38,7 @@ export default class componentName extends Component{
                     <div className={style.article}>
                         <Article/>
                     </div>
-                    <div>
-                        <Operation/>
-                    </div>
-
-                    <Footer/>
+                    <Operation/>
                 </div>
             </div>
         )

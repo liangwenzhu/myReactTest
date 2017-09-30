@@ -21,17 +21,14 @@ export default class componentName extends Component{
 
     }
     handleClick = ()=>{
-        this.props.postFn();
+
     };
     render(){
         const {
             children,
-            active
         } = this.props;
-        let activeClass ;
-        active ? activeClass = style.activeClass : '';
         return(
-            <button className = {style.init + ' ' + activeClass}
+            <button className = {style.init}
                     onClick = {this.handleClick}
             >{children}</button>
         )

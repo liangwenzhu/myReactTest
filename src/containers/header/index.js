@@ -1,6 +1,7 @@
 //button
 import React, {findDOMNode, Component} from 'react';
 import { string, object, number, array, bool, func, symbol } from 'prop-types';
+import {BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import style from './css.css';
 import TitleImg from './titleImg/index';
 import TitleContent from './titleContent/index'
@@ -48,9 +49,10 @@ export default class componentName extends Component{
             <div className={style.init}>
                 <header className={style.header}>
                     <div className={style.logo}>
-                        <img className={style.logoImg} src={require('../../imgSource/headerIcon.jpg')}/>
+                        <Link to={`/`}>
+                            <img className={style.logoImg} src={require('../../imgSource/headerIcon.jpg')} />
+                        </Link>
                         {title}
-                        {/*<TitleContent>这是贴子长长的标题</TitleContent>*/}
                     </div>
                     <Navigation/>
                 </header>

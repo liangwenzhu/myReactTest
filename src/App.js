@@ -39,22 +39,22 @@ class App extends Component {
                 ModelWindow = <ModelSign title="注册"/>;
         }
         return(
+            <ConnectedRouter history={history}>
             <div className="App">
                 {ModelWindow}
                 <Header/>
                 <div className="container">
-                    <ConnectedRouter history={history}>
-                        <Switch>
-                            <Route exact path="/" component={HomePage}/>
-                            <Route path="/post" component={PostPage}/>
-                            {/*<Switch>*/}
-                            {/*<Route exact path="/inbox" component={Inbox}/>*/}
-                            {/*<Route path="/inbox/react/:id" component={InboxChild}/>*/}
-                            {/*</Switch>*/}
-                        </Switch>
-                    </ConnectedRouter>
+                    <Switch>
+                        <Route exact path="/" component={HomePage}/>
+                        <Route path="/post" component={PostPage}/>
+                        {/*<Switch>*/}
+                        {/*<Route path="/inbox/react/:id" component={InboxChild}/>*/}
+                        {/*<Route exact path="/inbox" component={Inbox}/>*/}
+                        {/*</Switch>*/}
+                    </Switch>
                 </div>
             </div>
+            </ConnectedRouter>
         )
     }
 }

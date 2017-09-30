@@ -9,12 +9,13 @@
 	white-space: nowrap;
 	outline: none;
 	color: #333;
-	padding:5px 12px;
+	padding:5px 5px;
     margin-top:6px;
-    background-color: #ffffff;
-    transition: 0.2s;
+    background-color: inherit;
+    font-size: 12px;
 }
 .init:hover{
+	/*opacity: 0.9;*/
 	background-color: #e2e2e2;
 }
 .init:active{
@@ -22,10 +23,6 @@
 	background-image: none;
 }
 .init span{
-    font-size: 14px;
     padding:0;
     margin:0;
-}
-.activeClass{
-    background-color: #f7f8fa;
 }
