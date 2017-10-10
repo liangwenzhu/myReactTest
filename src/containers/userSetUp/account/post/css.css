@@ -1,0 +1,25 @@
+.init{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid #48baff;
+	border-radius: 3px;
+	white-space: nowrap;
+	outline: none;
+	color: white;
+	padding:5px 12px;
+	background-color: #3b9dd6;
+    margin: 10px 0 5px 0;
+}
+.init:hover{
+    background-color: #3ea5e1;
+}
+.init:active{
+	outline: none;
+	background-image: none;
+}
+.init span{
+    margin-right:5px;
+}

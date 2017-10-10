@@ -1,0 +1,36 @@
+
+.init{
+	display: flex;
+    align-items: center;
+	width:100%;
+	height:50px;
+	vertical-align: middle;
+	background-image: none;
+	border: none;
+	border-radius: 3px;
+	white-space: nowrap;
+	outline: none;
+	color: #333;
+}
+.init p{
+     cursor: pointer;
+     padding:5px 8px;
+     margin:0 12px;
+     transition: 0.1s;
+}
+.init p:hover{
+    background-color: #f5c097;
+    color: #f55c35;
+    transition: 0.1s;
+}
+.init span{
+    margin-right:5px;
+}
+.init .active{
+    background-color: #e45735;
+    color: white;
+}
+.init .active:hover{
+    background-color: #e45735;
+    color: white;
+}

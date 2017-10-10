@@ -5,10 +5,12 @@ import {BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import logo from './logo.svg';
 import './gobalCss/App.css';
 import './gobalCss/animation.css'
+//路由
 import Header from './containers/header/index';
 import HomePage from './routeView/homePage/index';
 import PostPage from './routeView/postPage/index';
-
+import UserPage from './routeView/userPage/index';
+//模态窗
 import ModelLogin from './containers/modelLogin/index';
 import ModelSign from './containers/modelSign/index';
 
@@ -47,6 +49,7 @@ class App extends Component {
                     <Switch>
                         <Route exact path="/" component={HomePage}/>
                         <Route path="/post" component={PostPage}/>
+                        <Route path="/user" component={UserPage}/>
                         {/*<Switch>*/}
                         {/*<Route path="/inbox/react/:id" component={InboxChild}/>*/}
                         {/*<Route exact path="/inbox" component={Inbox}/>*/}

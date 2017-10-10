@@ -1,0 +1,12 @@
+
+.init{
+	display: block;
+	width:100%;
+    min-height:800px;
+	vertical-align: middle;
+	background-image: none;
+	white-space: nowrap;
+	outline: none;
+	color: #333;
+    padding-bottom: 60px;
+}
