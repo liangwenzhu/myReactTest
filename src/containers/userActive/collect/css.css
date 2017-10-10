@@ -1,0 +1,50 @@
+
+.init{
+	display: block;
+	width:100%;
+    padding-left: 20px;
+	vertical-align: middle;
+	background-image: none;
+	border: none;
+	border-radius: 3px;
+	white-space: nowrap;
+	outline: none;
+	color: #333;
+}
+.init a {
+    color: #08c;
+    margin:0 10px;
+}
+.init .userHead {
+    display: inline-block;
+    width:45px;
+    height:45px;
+    -webkit-border-radius:100px;
+    -moz-border-radius:100px;
+    border-radius:100px;
+}
+.init .title{
+    display: inline-block;
+    vertical-align: top;
+
+}
+.init .content {
+    background-color: #f7faff;
+    padding:20px 10px;
+}
+.item{
+    padding-bottom:15px;
+    margin-bottom:25px;
+    border-bottom:1px solid #ffe5ee;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.time{
+    color: #999999;
+}
+.icon{
+    color: #fa6c8d;
+}

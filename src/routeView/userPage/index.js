@@ -8,6 +8,9 @@ import UserNav from '../../containers/userNav/index'
 import Setup from '../../containers/userSetUp/index'
 import Message from '../../containers/userMessage/index'
 import Notice from '../../containers/userNotice/index'
+import Active from '../../containers/userActive/index'
+import Summary from '../../containers/userSummary/index'
+
 export default class componentName extends Component{
     constructor(props){
         super(props)
@@ -36,9 +39,11 @@ export default class componentName extends Component{
                 <UserHeader/>
                 <UserNav/>
                 <Switch>
-                    <Route exact path="/user" component={Setup}/>
-                    <Route exact path="/user/notice" component={Notice}/>
-                    <Route exact path="/user/message" component={Message}/>
+                    <Route exact path="/user/summary" component={Summary}/>
+                    <Route path="/user/setup" component={Setup}/>
+                    <Route path="/user/notice" component={Notice}/>
+                    <Route path="/user/active" component={Active}/>
+                    <Route path="/user/message" component={Message}/>
                 </Switch>
             </div>
         )

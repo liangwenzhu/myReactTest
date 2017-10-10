@@ -1,0 +1,44 @@
+.init{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width:310px;
+    height:100px;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;;
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:90%;
+    height:50px;
+    margin: 0 auto;
+    border-bottom: 1px solid #bbd9e6;
+    color: #6c6c6c;
+}
+.user{
+    cursor: pointer;
+}
+.user:hover{
+    color: #3b9dd6;
+}
+.init b{
+    margin:0 7px;
+    cursor: pointer;
+}
+.init b:hover{
+    color: #3b9dd6;
+}
+.footer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:90%;
+    height:50px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #00a9d0;
+    cursor: pointer;
+}
+

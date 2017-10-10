@@ -1,9 +1,7 @@
 //button
 import React, {findDOMNode, Component} from 'react';
 import { string, object, number, array, bool, func, symbol } from 'prop-types';
-
 import style from './css.css';
-import Nothing from '../../../containers/userNothingTips/index'
 export default class componentName extends Component{
     constructor(props){
         super(props)
@@ -12,7 +10,7 @@ export default class componentName extends Component{
 
     };
     static defaultProps = {
-
+        children:'没有找到内容哦。'
     };
     componentWillMount(){
 
@@ -27,10 +25,9 @@ export default class componentName extends Component{
         const {
             children
         } = this.props;
-
         return(
             <div className={style.init}>
-                <Nothing/>
+                {children}
             </div>
         )
     }

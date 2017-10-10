@@ -11,14 +11,19 @@
 	white-space: nowrap;
 	outline: none;
 	color: #333;
+    margin-top:10px;
 }
-.init p{
-     cursor: pointer;
-     padding:5px 8px;
-     margin:0 12px;
-     transition: 0.1s;
+.init a{
+    width:55px;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    padding:5px 8px;
+    margin-right:25px;
+    transition: 0.1s;
 }
-.init p:hover{
+.init a:hover{
     background-color: #f5c097;
     color: #f55c35;
     transition: 0.1s;

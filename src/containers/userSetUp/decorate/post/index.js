@@ -1,18 +1,15 @@
 //button
 import React, {findDOMNode, Component} from 'react';
 import { string, object, number, array, bool, func, symbol } from 'prop-types';
-
 import style from './css.css';
-import Nothing from '../../../containers/userNothingTips/index'
 export default class componentName extends Component{
     constructor(props){
         super(props)
     }
     static propTypes = {
-
     };
     static defaultProps = {
-
+        children: '按钮',
     };
     componentWillMount(){
 
@@ -23,15 +20,17 @@ export default class componentName extends Component{
     componentWillUnmount(){
 
     }
+    handleClick = ()=>{
+
+    };
     render(){
         const {
-            children
+            children,
         } = this.props;
-
         return(
-            <div className={style.init}>
-                <Nothing/>
-            </div>
+            <button className = {style.init}
+                    onClick = {this.handleClick}
+            >{children}</button>
         )
     }
 }

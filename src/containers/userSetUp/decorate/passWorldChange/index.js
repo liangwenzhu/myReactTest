@@ -7,10 +7,9 @@ export default class componentName extends Component{
         super(props)
     }
     static propTypes = {
-
     };
     static defaultProps = {
-
+        children: '按钮',
     };
     componentWillMount(){
 
@@ -21,15 +20,17 @@ export default class componentName extends Component{
     componentWillUnmount(){
 
     }
+    handleClick = ()=>{
+
+    };
     render(){
         const {
-            children
+            children,
         } = this.props;
         return(
-            <div className={style.init}>
-                <p className = {style.active + ' ' + style.list}>账户</p>
-                <p className = {style.list}>账户</p>
-            </div>
+            <button className = {style.init}
+                    onClick = {this.handleClick}
+            >{children}</button>
         )
     }
 }

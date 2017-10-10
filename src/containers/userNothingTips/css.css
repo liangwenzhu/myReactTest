@@ -1,0 +1,19 @@
+
+.init{
+	display: block;
+	width:100%;
+    height:30px;
+    line-height: 30px;
+    padding-left:20px;
+	vertical-align: middle;
+	border: none;
+	border-radius: 3px;
+	white-space: nowrap;
+	outline: none;
+	color: #6c6c6c;
+    font-size: 14px;
+    background: -moz-linear-gradient(to right, #d4f2ff, white);
+    background: -webkit-linear-gradient(to right, #d4f2ff, white);
+    background: -o-linear-gradient(to right, #d4f2ff, white);
+    background: linear-gradient(to right, #d4f2ff, white);
+}

@@ -4,6 +4,7 @@ import { string, object, number, array, bool, func, symbol } from 'prop-types';
 import style from './css.css';
 import Login from './loginBtn/index'
 import Sign from './signBtn/index'
+import BeenLogin from './beenLogined/index'
 export default class componentName extends Component{
     constructor(props){
         super(props)
@@ -31,6 +32,7 @@ export default class componentName extends Component{
             <div className={style.init}>
                 <Login>登陆</Login>
                 <Sign>注册</Sign>
+                <BeenLogin/>
             </div>
         )
     }

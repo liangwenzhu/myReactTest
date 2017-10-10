@@ -1,5 +1,6 @@
 .init{
-	display: inline-flex;;
+    position: relative;
+	display: inline;;
     height:100%;
     vertical-align: middle;
     align-items:center;
@@ -10,6 +11,4 @@
 	color: #333;
 	background-color: transparent;
 }
-.login{
-	margin-right: 10px;
-}
+

@@ -1,5 +1,7 @@
 import React, {findDOMNode, Component} from 'react';
 import { string, object, number, array, bool, func, symbol } from 'prop-types';
+import {BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+
 import style from './css.css';
 import Aside from './aside/index'
 import System from './system/index'
@@ -32,9 +34,11 @@ export default class componentName extends Component{
         return(
             <div className={style.init}>
                 <Aside/>
-                {/*<System/>*/}
-                {/*<Receive/>*/}
-                <UpVote/>
+                <Switch>
+                    <Route exact path="/user/notice" component={System}/>
+                    <Route exact path="/user/notice/receive" component={Receive}/>
+                    <Route exact path="/user/notice/upVote" component={UpVote}/>
+                </Switch>
             </div>
         )
     }

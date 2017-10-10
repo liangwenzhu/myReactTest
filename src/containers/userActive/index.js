@@ -4,8 +4,10 @@ import {BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 import style from './css.css';
 import Aside from './aside/index'
-import Account from './account/index'
-import Decorate from './decorate/index'
+import Topic from './topic/index'
+import Reply from './reply/index'
+import UpVote from './upVote/index'
+import Collect from './collect/index'
 export default class componentName extends Component{
     constructor(props){
         super(props)
@@ -33,8 +35,10 @@ export default class componentName extends Component{
             <div className={style.init}>
                 <Aside/>
                 <Switch>
-                    <Route exact path="/user/setup" component={Account}/>
-                    <Route exact path="/user/setup/decorate" component={Decorate}/>
+                    <Route exact path="/user/active" component={Topic}/>
+                    <Route exact path="/user/active/reply" component={Reply}/>
+                    <Route exact path="/user/active/upVote" component={UpVote}/>
+                    <Route exact path="/user/active/collect" component={Collect}/>
                 </Switch>
             </div>
         )
