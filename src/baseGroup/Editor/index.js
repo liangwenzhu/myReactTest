@@ -85,7 +85,7 @@ export default class componentName extends Component{
 
     };
     static defaultProps = {
-
+        buttonVal:'按钮'
     };
     componentWillMount(){
 
@@ -120,6 +120,7 @@ export default class componentName extends Component{
     render(){
         const {editorState} = this.state;
         const {
+
         } = this.props;
         return(
             <div className={style.init}>
@@ -141,7 +142,7 @@ export default class componentName extends Component{
                     >
                     </Editor>
                 </div>
-                <Post storeHandle={this.storeHandle}>提交评论</Post>
+                <Post storeHandle={this.storeHandle}>{}提交评论</Post>
             </div>
         )
     }

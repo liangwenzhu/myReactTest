@@ -38,7 +38,7 @@ export default class componentName extends Component{
                     <ReplyItem/>
                     <ReplyItem/>
                     <div className={style.editor}>
-                        <Editor/>
+                        <Editor buttonVal="提交评论"/>
                     </div>
                 </div>
             </div>

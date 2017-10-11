@@ -42,7 +42,6 @@ export default class componentName extends Component{
                     <div>
                         <Operation/>
                     </div>
-
                     <Footer/>
                 </div>
             </div>

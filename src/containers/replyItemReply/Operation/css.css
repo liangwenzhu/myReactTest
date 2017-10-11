@@ -1,6 +1,7 @@
 
 .init{
     position: relative;
+    border-bottom: 1px solid #dadada;
 }
 .init:after{
     clear:both;
@@ -13,6 +14,7 @@
 .listType{
     list-style-type: none;
 }
+
 .ul{
     width:100%;
     display: flex;
@@ -30,16 +32,4 @@
     background-color: #cccccc;
     color: #414141;
 }
-.love :hover{
-    background-color: #fee9ee;
-    color: #fa6c8d;
-}
-.li span{
-    display: inline-block;
-    padding:8px;
-    cursor: pointer;
-    font-size: 20px;
-}
-.replyNum{
-    color: #ff28b3;
-}
+

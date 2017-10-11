@@ -21,7 +21,7 @@ export default class componentName extends Component{
 
     }
     handleClick = ()=>{
-
+        this.props.handleClick();
     };
     render(){
         const {

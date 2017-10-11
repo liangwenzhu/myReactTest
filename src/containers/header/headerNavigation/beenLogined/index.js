@@ -1,4 +1,3 @@
-//button
 import React, {findDOMNode, Component} from 'react';
 import { string, object, number, array, bool, func, symbol } from 'prop-types';
 import {BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';

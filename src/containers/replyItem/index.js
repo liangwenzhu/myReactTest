@@ -5,6 +5,8 @@ import style from './css.css';
 import Article from '../../baseGroup/EditorReadOnly/index'
 import Operation from './Operation/index';
 import Reply from '../replyItemReply/index';
+
+
 export default class componentName extends Component{
     constructor(props){
         super(props);
@@ -52,7 +54,6 @@ export default class componentName extends Component{
                     <div className={style.article}>
                         <Article/>
                     </div>
-
                     <Operation postFn={this.postFn} isReplyShow={isReplyShow}/>
                     {isReplyShow ? <Reply/> : ''}
                 </div>

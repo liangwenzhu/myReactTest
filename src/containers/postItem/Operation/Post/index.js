@@ -1,8 +1,10 @@
-//button
 import React, {findDOMNode, Component} from 'react';
 import { string, object, number, array, bool, func, symbol } from 'prop-types';
+import { connect } from 'react-redux';
+
+
 import style from './css.css';
-export default class componentName extends Component{
+class componentName extends Component{
     constructor(props){
         super(props)
     }
@@ -21,7 +23,10 @@ export default class componentName extends Component{
 
     }
     handleClick = ()=>{
-
+        this.props.dispatch({
+            type:'modelWinState',
+            modelWinState:'reply'
+        })
     };
     render(){
         const {
@@ -34,3 +39,9 @@ export default class componentName extends Component{
         )
     }
 }
+function select(state){
+    return{
+        modelWin: state.modelWin,
+    }
+}
+export default connect(select)(componentName);

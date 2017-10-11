@@ -41,4 +41,7 @@
     color: #00a9d0;
     cursor: pointer;
 }
+.active{
+    color: #3b9dd6;
+}
 

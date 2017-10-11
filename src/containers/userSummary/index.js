@@ -80,22 +80,22 @@ export default class componentName extends Component{
                         <label>最近获赞</label>
                         <div className = {style.content}>
                             <p>10天前</p>
-                            <p><a>Zhu</a>在<a>这是一条主题的名字</a>中赞了他</p>
+                            <p><a>Zhu</a>在<a>这是一条主题的名字</a>中<b className= {"iconfont icon-like_fill " + style.upvote}/>了他</p>
                         </div>
                         <div className = {style.content}>
                             <p>103天前</p>
-                            <p><a>Wen</a>在<a>这是一条主题的名字</a>中赞了他</p>
+                            <p><a>Wen</a>在<a>这是一条主题的名字</a>中<b className= {"iconfont icon-like_fill " + style.upvote}/>了他</p>
                         </div>
                     </section>
                     <section className = {style.inlineSection}>
                         <label>最近点赞</label>
                         <div className = {style.content}>
                             <p>10天前</p>
-                            <p><a>Liang</a>在<a>这是一条主题的名字</a>中赞了<a>Zhu</a></p>
+                            <p><a>Liang</a>在<a>这是一条主题的名字</a>中<b className= {"iconfont icon-like_fill " + style.upvote}/>了<a>Zhu</a></p>
                         </div>
                         <div className = {style.content}>
                             <p>103天前</p>
-                            <p><a>Liang</a>在<a>这是一条主题的名字</a>中赞了<a>Wen</a></p>
+                            <p><a>Liang</a>在<a>这是一条主题的名字</a>中<b className= {"iconfont icon-like_fill " + style.upvote}/>了<a>Wen</a></p>
                         </div>
                     </section>
                 </div>

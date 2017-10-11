@@ -52,7 +52,7 @@ export default class componentName extends Component{
             selectTips, //select的提示
         } = this.props;
         return(
-            <div className={style.init} onFocus={()=>{this.getIfShow(true)}} onBlur={()=>{this.getIfShow(false)}}>
+            <div className={style.init} onClick={()=>{this.getIfShow(true)}}>
                 <button className={style.select}  placeholder="select" >{this.state.selected.name}</button>
                 <span className={style.selectIcon + " iconfont icon-unfold"} onClick={this.handleClick}/>
                 {this.state.ifShow ? <Ul getOptionVal = {this.getOptionVal} getIfShow = {this.getIfShow} optionData={optionData}/> : ''}

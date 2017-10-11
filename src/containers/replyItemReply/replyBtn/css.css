@@ -1,0 +1,28 @@
+.init{
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border-radius: 3px;
+    border:1px solid #bbd6f1;
+	white-space: nowrap;
+	outline: none;
+	color: #333;
+	padding:5px 8px;
+    margin-top:6px;
+    background-color: white;
+    font-size: 12px;
+}
+.init:hover{
+    background-color: #f1fbff;
+
+}
+.init:active{
+	outline: none;
+	background-image: none;
+}
+.init span{
+    padding:0;
+    margin:0;
+}

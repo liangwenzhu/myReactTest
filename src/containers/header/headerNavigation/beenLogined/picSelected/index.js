@@ -1,7 +1,7 @@
 //button
 import React, {findDOMNode, Component} from 'react';
 import { string, object, number, array, bool, func, symbol } from 'prop-types';
-import {BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Link, Switch,NavLink } from 'react-router-dom';
 
 import style from './css.css';
 export default class componentName extends Component{
@@ -30,22 +30,22 @@ export default class componentName extends Component{
         return(
             <div className = {style.init} onMouseLeave = {this.mouseOutHandle}>
                 <header className = {style.header}>
-                    <Link to = {`/user/summary`}>
+                    <NavLink to = {`/user/summary`}>
                         <div className = {style.user}>
                             <b className="iconfont icon-people_fill"/>
                             Liangwenzhu
                         </div>
-                    </Link>
+                    </NavLink>
                     <div>
-                        <Link to = {`/user/active/collect`}>
+                        <NavLink to = {`/user/active/collect`} activeClassName={style.active}>
                             <b className="iconfont icon-collection_fill"/>
-                        </Link>
-                        <Link to = {`/user/message`}>
+                        </NavLink>
+                        <NavLink to = {`/user/message`} activeClassName={style.active}>
                             <b className="iconfont icon-mail_fill"/>
-                        </Link>
-                        <Link to = {`/user/setup`}>
+                        </NavLink>
+                        <NavLink to = {`/user/setup`} activeClassName={style.active}>
                             <b className="iconfont icon-setup_fill"/>
-                        </Link>
+                        </NavLink>
                     </div>
                 </header>
                 <footer className = {style.footer}>

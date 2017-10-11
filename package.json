@@ -1,7 +1,7 @@
 {
   "name": "myrouter",
   "version": "0.1.0",
-  "homepage": "http://localhost:3000/",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "css-loader": "^0.28.7",

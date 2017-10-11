@@ -13,6 +13,9 @@ import UserPage from './routeView/userPage/index';
 //模态窗
 import ModelLogin from './containers/modelLogin/index';
 import ModelSign from './containers/modelSign/index';
+import ModelPost from './containers/modelPost/index'
+import ModelReply from './containers/modelReply/index'
+
 
 import Button from './baseGroup/Button/index';
 import Input from './baseGroup/Input/index';
@@ -39,6 +42,13 @@ class App extends Component {
                 break;
             case 'login':
                 ModelWindow = <ModelSign title="注册"/>;
+                break;
+            case 'post':
+                ModelWindow = <ModelPost title="创建新的主题"/>;
+                break;
+            case 'reply':
+                ModelWindow = <ModelReply title="回复主题"/>;
+                break;
         }
         return(
             <ConnectedRouter history={history}>

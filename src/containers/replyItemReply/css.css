@@ -1,11 +1,17 @@
 
 .init{
+    width:100%;
+    height:100%;
+    background-color: #f7f8fa;
+    padding-bottom:10px;
+    overflow: hidden;
+}
+.item{
     position: relative;
 	display: block;
 	width:100%;
     padding:10px 0;
 	vertical-align: middle;
-	background-color: #f7f8fa;
 	border:none;
 	border-radius: 3px;
 	white-space: nowrap;
@@ -77,5 +83,28 @@
     padding:8px;
     font-size: 14px;
     cursor: pointer;
+}
+.replyBtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right:10px;
+    margin-bottom:15px;
+    font-size: 13px;
+}
+.replyBtn span{
+    margin-left:55px;
+}
+.replyBtn a{
+    color: #08c;
+    margin:0 5px;
+}
+
+.editor{
+    background-color: #fff8f9;
+    border: 1px solid #bbd6f1;
+    font-size: 13px;
+    width: 695px;
+    margin-left: 50px
 }
 
