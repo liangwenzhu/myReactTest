@@ -76,7 +76,7 @@ export default class componentName extends Component{
     constructor(props){
         super(props);
         this.state = {
-            editorState:EditorState.createEmpty()
+            editorState:EditorState.createWithContent(convertFromRaw(this.props.contentState))
         };
         this.focus = () => this.refs.editor.focus();
         this.onChange = (editorState) => this.setState({editorState});
@@ -85,7 +85,7 @@ export default class componentName extends Component{
 
     };
     static defaultProps = {
-
+        contentState:convertToRaw(EditorState.createEmpty().getCurrentContent())
     };
     componentWillMount(){
 
@@ -99,6 +99,7 @@ export default class componentName extends Component{
     render(){
         const {editorState} = this.state;
         const {
+
         } = this.props;
         return(
             <Editor

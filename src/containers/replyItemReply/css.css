@@ -49,7 +49,9 @@
     width:100%;
     min-height:30px;
     margin-bottom:5px;
-    background-color: inherit;
+    background-color: #f1f2f3;
+    font-size: 14px;
+
 }
 .operationContainer{
     height:45px;

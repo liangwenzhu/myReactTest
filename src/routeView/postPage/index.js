@@ -1,10 +1,10 @@
-//button
 import React, {findDOMNode, Component} from 'react';
 import { string, object, number, array, bool, func, symbol } from 'prop-types';
 import PostTitle from '../../containers/postTitle/index';
 import PostItem from '../../containers/postItem/index';
 import ReplyItem from '../../containers/replyItem/index';
 import Editor from '../../baseGroup/Editor/index';
+// import Editorsss from '../../baseGroup/EditorPic/index';
 import style from './css.css';
 
 export default class componentName extends Component{
@@ -39,6 +39,9 @@ export default class componentName extends Component{
                     <ReplyItem/>
                     <div className={style.editor}>
                         <Editor buttonVal="提交评论"/>
+                    </div>
+                    <div className={style.editor}>
+                        {/*<Editorsss/>*/}
                     </div>
                 </div>
             </div>

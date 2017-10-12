@@ -97,7 +97,8 @@ export default class componentName extends Component{
 
     }
     storeHandle = ()=>{
-        console.log(JSON.stringify(this.state.editorState))
+        const content = this.state.editorState.getCurrentContent();
+        console.log(JSON.stringify(convertToRaw(content)))
     };
     //行格式
     _toggleInlineStyle = (inlineStyle)=>{
@@ -142,7 +143,7 @@ export default class componentName extends Component{
                     >
                     </Editor>
                 </div>
-                <Post storeHandle={this.storeHandle}>{}提交评论</Post>
+                <Post storeHandle={this.storeHandle}>{}{this.props.buttonVal}</Post>
             </div>
         )
     }
