@@ -1,0 +1,50 @@
+
+.init{
+    width:50px;
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.init:hover{
+    background-color: #e8e9eb;
+    color: #35a6ff;
+}
+:global(.editorActiveButton){
+    background-color: #e8e9eb;
+    color: #e71338;
+}
+:global(.editorActiveButton):hover{
+    background-color: #e8e9eb;
+    color: #e71338;
+}
+:global(.editorButtonIcon){
+    font-size: 27px;
+}
+:global(.editorButtonColorBlack){
+    margin-left:15px;
+    width:17px;
+    height:17px;
+    background-color: #000
+}
+:global(.editorButtonColorBlack):hover{
+    background-color: #000
+}
+:global(.editorButtonColorBlue){
+    margin-left:15px;
+    width:17px;
+    height:17px;
+    background-color: #48baff
+}
+:global(.editorButtonColorBlue):hover{
+    background-color: #48baff
+}
+:global(.editorButtonColorPurple){
+    margin-left:15px;
+    width:17px;
+    height:17px;
+    background-color: #8f64e6
+}
+:global(.editorButtonColorPurple):hover{
+    background-color: #8f64e6
+}

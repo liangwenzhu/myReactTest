@@ -12,12 +12,15 @@ import {
     RichUtils,
     getDefaultKeyBinding,
     KeyBindingUtil,
-    Modifier
+    Modifier,
+    AtomicBlockUtils
 } from 'draft-js';
 import Immutable from 'immutable';
+
 import InlineStyle from './InlineStyleControl/index';
 import BlockStyle from './BlockStyleControl/index';
 import ColorStyle from './InlineStyleControl/index';
+import MediaStyle from './MediaStyleControl/index';
 import Post from './Post/index';
 import style from './css.css';
 
@@ -42,7 +45,11 @@ const ColorType = [
     {key:2,label:'',styleName:'Blue',title:'蓝色字体',iconClassName:'editorButtonColorBlue'},
     {key:3,label:'',styleName:'Purple',title:'紫色字体',iconClassName:'editorButtonColorPurple'},
 ];
-
+//多媒体插入按钮
+const MediaType = [
+    {key:1,label: 'image', styleName: '',title:'插入配图',iconClassName:'iconfont icon-picture editorButtonIcon'},
+    {key:2,label: 'video', styleName: '',title:'插入小视频',iconClassName:'iconfont icon-video editorButtonIcon'},
+];
 //行样式映射
 const editorStyleMap = {
     //颜色
@@ -63,11 +70,55 @@ const editorStyleMap = {
         fontStyle: 'italic',
     },
 };
+
 const blockRenderMap = Immutable.Map({
     'section': {
         element: 'section'
     },
 });
+
+//扩展块组件
+function mediaBlockRenderer(block) {
+    if (block.getType() === 'atomic') {
+        return {
+            component: Media,
+            editable: false,
+        };
+    }
+
+    return null;
+}
+const Audio = (props) => {
+    return <audio controls src={props.src} style={styles.media} />;
+};
+
+const Image = (props) => {
+    return <img src={props.src} style={styles.media} />;
+};
+
+const Video = (props) => {
+    return <video controls src={props.src} style={styles.media} />;
+};
+
+const Media = (props) => {
+    const entity = props.contentState.getEntity(
+        props.block.getEntityAt(0)
+    );
+    const {src} = entity.getData();
+    const type = entity.getType();
+
+    let media;
+    if (type === 'audio') {
+        media = <Audio src={src} />;
+    } else if (type === 'image') {
+        media = <Image src={src} />;
+    } else if (type === 'video') {
+        media = <Video src={src} />;
+    }
+
+    return media;
+};
+
 //扩展块元素
 const extendedBlockRenderMap = DefaultDraftBlockRenderMap.merge(blockRenderMap);
 // 绘制方法,组件
@@ -76,7 +127,9 @@ export default class componentName extends Component{
     constructor(props){
         super(props);
         this.state = {
-            editorState:EditorState.createEmpty()
+            editorState:EditorState.createEmpty(),
+            urlValue:'',
+            urlType:''
         };
         this.focus = () => this.refs.editor.focus();
         this.onChange = (editorState) => this.setState({editorState});
@@ -96,6 +149,7 @@ export default class componentName extends Component{
     componentWillUnmount(){
 
     }
+
     storeHandle = ()=>{
         const content = this.state.editorState.getCurrentContent();
         console.log(JSON.stringify(convertToRaw(content)))
@@ -118,6 +172,43 @@ export default class componentName extends Component{
             )
         );
     };
+
+    _mediaBlockType = ()=>{
+        const {editorState, urlValue, urlType} = this.state;
+        const contentState = editorState.getCurrentContent();
+        const contentStateWithEntity = contentState.createEntity(
+            urlType,
+            'IMMUTABLE',
+            {src: urlValue}
+        );
+        // alert(urlValue);
+        // 'https://pic3.zhimg.com/1578ef5a2_m.jpg'
+        const entityKey = contentStateWithEntity.getLastCreatedEntityKey();
+        const newEditorState = EditorState.set(
+            editorState,
+            {currentContent: contentStateWithEntity}
+        );
+        //更新
+        this.setState({
+            editorState: AtomicBlockUtils.insertAtomicBlock(
+                newEditorState,
+                entityKey,
+                ' '
+            ),
+            // showURLInput: false,
+            urlValue: '',
+        }, () => {
+            setTimeout(() => this.focus(), 0);
+        });
+    };
+
+    //urlGet
+    URLGet = (val,urlType)=>{
+        this.setState({
+            urlValue:val,
+            urlType:urlType
+        });
+    };
     render(){
         const {editorState} = this.state;
         const {
@@ -130,12 +221,13 @@ export default class componentName extends Component{
                     <BlockStyle editorState={editorState} onToggle={this._toggleBlockType} BlockType = {BlockType}/>
                     <ColorStyle editorState={editorState} onToggle={this._toggleInlineStyle} InlineType = {ColorType}/>
                     {/*<span title="表情" className={"iconfont icon-emoji " + style.icon}/>*/}
-                    {/*<span title="插入图片" className={"iconfont icon-picture " + style.icon}/>*/}
+                    <MediaStyle editorState={editorState} getUrl={this.URLGet} urlPost = {this._mediaBlockType} onClickFn={this._mediaBlockType} BlockType = {MediaType}/>
                 </div>
                 <div className={style.editorRoot} onClick={this.focus}>
                     <Editor
                         customStyleMap = {editorStyleMap}
-                        blockRenderMap={extendedBlockRenderMap}
+                        blockRendererFn={mediaBlockRenderer}
+                        // blockRenderMap={extendedBlockRenderMap}
                         editorState={editorState}
                         onChange = {this.onChange}
                         blockStyleFn={getBlockStyle}
@@ -161,3 +253,12 @@ function getBlockStyle(blockName){
             return null;
     }
 }
+const styles = {
+    media: {
+        width: '120px',
+        height: '75px',
+        // Fix an issue with Firefox rendering video controls
+        // with 'pre-wrap' white-space
+        whiteSpace: 'initial'
+    },
+};

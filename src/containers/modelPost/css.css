@@ -16,11 +16,11 @@
 .modelContent{
     position: absolute;
     display: block;
-    width:800px;
+    width:850px;
     height:375px;
     left:50%;
     top:50%;
-    margin-left: -400px;
+    margin-left: -425px;
     margin-top:-218px;
     vertical-align: middle;
     background-image: none;
