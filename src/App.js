@@ -8,6 +8,7 @@ import './gobalCss/animation.css'
 //路由
 import Header from './containers/header/index';
 import HomePage from './routeView/homePage/index';
+import Community from './routeView/community/index';
 import PostPage from './routeView/postPage/index';
 import UserPage from './routeView/userPage/index';
 //模态窗
@@ -58,6 +59,7 @@ class App extends Component {
                 <div className="container">
                     <Switch>
                         <Route exact path="/" component={HomePage}/>
+                        <Route exact path="/community" component={Community}/>
                         <Route path="/post" component={PostPage}/>
                         <Route path="/user" component={UserPage}/>
                         {/*<Switch>*/}

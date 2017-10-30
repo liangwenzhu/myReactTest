@@ -40,7 +40,7 @@ export default class componentName extends Component{
                         <Editor buttonVal="提交评论"/>
                     </div>
                     {/*<div className={style.editor}>*/}
-                        {/*<Editorsss/>*/}
+                    {/*<Editorsss/>*/}
                     {/*</div>*/}
                 </div>
             </div>

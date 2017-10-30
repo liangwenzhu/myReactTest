@@ -1,10 +1,5 @@
 import React, {findDOMNode, Component} from 'react';
 import { string, object, number, array, bool, func, symbol } from 'prop-types';
-import Swiper from '../../containers/homePageSwiper/index'
-import Welcome from '../../containers/homePageWelcome/index'
-import Recommend from '../../containers/homePageRecommend/index'
-import Review from '../../containers/homePageReviewContainer/index'
-import Footer from '../../containers/homePageFooter/index'
 import style from './css.css';
 export default class componentName extends Component{
     constructor(props){
@@ -27,17 +22,17 @@ export default class componentName extends Component{
     }
     render(){
         const {
-
+            children
         } = this.props;
         return(
-            <div className = {style.init}>
-                <div className = {style.header}>
-                    <Swiper/>
-                    <Welcome/>
+            <div className={style.init}>
+                <p className = {style.p}>© 2001-2015 去领养 PETLY 备案：冀ICP备11010768号-4</p>
+                <div className = {style.select}>
+                    <div className = {style.item}>关于我们</div>
+                    <div className = {style.item}>领养提示</div>
+                    <div className = {style.item}>商务合作</div>
+                    <div className = {style.item}>联系我们</div>
                 </div>
-                <Recommend/>
-                <Review/>
-                <Footer/>
             </div>
         )
     }
